@@ -19,7 +19,7 @@
   - reading the activity label file and merge the combined data from the pervious step with the activity labels using activity id.
 - generate tidy data using the average of measurment group by activity and subject using aggregate function.
 - sort the result by subject id then activity id.
-- write the result to file.
+- remove the activity id column and then write the result to file.
 - return the working directory to its pervious value
 - clean up temp variables.
 - view the result using view function.

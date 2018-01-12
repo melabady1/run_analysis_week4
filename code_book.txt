@@ -57,7 +57,6 @@ The following data set has been added:
 - tidy_data.txt which combines both the test and train data and contanis the average of each mean and standard devition variable, these averages are grouped by the subject and activity, the following is a description of the variables in this dataset:
 
 subjectId  ->  Represent subject id.
-activityId  ->  Represent Activity id done by the subject.
 activity  ->  Represent Activity label done by the subject.
 tBodyAcc.mean...X  ->  Represent the mean of tBodyAcc-mean()-X .
 tBodyAcc.mean...Y  ->  Represent the mean of tBodyAcc-mean()-Y .
