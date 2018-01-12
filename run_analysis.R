@@ -1,6 +1,7 @@
 ##step 1 - set working directory to the folder contains 
 ## the assignment extracted data
 dir = "./UCI HAR Dataset";
+org_wd = getwd()
 if(dir.exists(dir))
 {
   setwd(dir)
@@ -69,13 +70,12 @@ tidy_data <- tidy_data[c(1, 3:ncol(tidy_data))]
 write.table(tidy_data,file = "./tidy_data.txt", row.name=FALSE )
 
 ##step 10 - return the working directory to its pervious value
-if(dir.exists(dir))
-{
-  setwd("..")
-}
+
+setwd(org_wd)
 
 ##step 11 - clean up temp variables.
 rm(dir)
+rm(org_wd)
 rm(features)
 rm(activities)
 rm(train_data)
